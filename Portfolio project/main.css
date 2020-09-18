@@ -1,0 +1,71 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: Kufam;
+    color: #2c3531;
+    margin-top: 20px;
+    padding-top: 30px;
+    background-color: black;
+    /* padding-bottom: 30px; */
+}
+
+#title1 {
+    text-align: center;
+    font-size: large;
+    font-style: oblique;
+}
+
+
+/* .navbar-fixed {
+    position: fixed;
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background: black;
+} */
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    background-color: #333;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Add a color to the active/current link */
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
