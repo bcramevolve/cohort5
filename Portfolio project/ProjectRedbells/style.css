@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+}
+
+#main>article {
+    flex: 1;
+    order: 1;
+    background-color: black;
+    padding-top: 242px;
+    /* margin-top: 300px; */
+}
+
+#main>nav,
+#main>aside {
+    flex: 0 0 20vw;
+}
+
+#main>nav {
+    background: linear-gradient(to right, darkblue, black, darkblue);
+    order: 3;
+}
+
+
+/* #main>aside {
+    background: beige;
+    order: 2;
+} */
+
+header {
+    background: black;
+    height: 30vh;
+    font-family: 'Orbitron';
+    color: lightgreen;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    text-align: left;
+    background: linear-gradient(darkblue, black, darkblue);
+    position: fixed;
+    z-index: 999;
+    width: 79.5%;
+}
+
+footer {
+    background: linear-gradient(darkblue, black);
+    height: 8vh;
+    font-family: 'Orbitron';
+    color: lightgreen;
+    text-align: center;
+    padding: 18px;
+}
+
+footer,
+article,
+nav,
+{
+    padding: 1em;
+}
+
+.employment {
+    font-family: 'Orbitron';
+    color: lightgreen;
+    padding-left: 70px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+    background: linear-gradient(darkblue, black, darkblue);
+    color: lightgreen;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.accordion:hover {
+    background-color: green;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+    padding: 0 18px;
+    background-color: black;
+    display: none;
+    overflow: hidden;
+}
+
+.twitter-timeline {
+    padding-top: 200px;
+}

@@ -34,8 +34,8 @@ body {
 
 .topnav {
     background-color: #333;
-    position: fixed;
-    z-index: 999;
+    /* position: sticky;
+    z-index: 999; */
     top: 0;
     left: 0;
     right: 0;
@@ -68,4 +68,8 @@ body {
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
+}
+
+.topnav-right {
+    float: right;
 }
