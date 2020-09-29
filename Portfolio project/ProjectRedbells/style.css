@@ -18,13 +18,14 @@ body {
     flex: 1;
     order: 1;
     background-color: black;
-    padding-top: 242px;
+    padding-top: 20px;
     /* margin-top: 300px; */
 }
 
 #main>nav,
-#main>aside {
+{
     flex: 0 0 20vw;
+    padding-top: 242px;
 }
 
 #main>nav {
@@ -40,16 +41,16 @@ body {
 
 header {
     background: black;
-    height: 30vh;
+    height: auto;
     font-family: 'Orbitron';
     color: lightgreen;
     padding-left: 50px;
     padding-bottom: 20px;
     text-align: left;
     background: linear-gradient(darkblue, black, darkblue);
-    position: fixed;
+    display: flex;
     z-index: 999;
-    width: 79.5%;
+    width: auto;
 }
 
 footer {
@@ -71,7 +72,7 @@ nav,
 .employment {
     font-family: 'Orbitron';
     color: lightgreen;
-    padding-left: 70px;
+    padding-left: 35px;
     padding-bottom: 30px;
     margin-top: 10px;
 }
@@ -88,7 +89,7 @@ nav,
     text-align: left;
     border: none;
     outline: none;
-    transition: 0.4s;
+    transition: 1s;
 }
 
 
