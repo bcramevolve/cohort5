@@ -1,115 +1,170 @@
-* {
-    box-sizing: border-box;
-}
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    #main {
+        display: flex;
+        flex: 1;
+    }
+    
+    #main>article {
+        flex: 1;
+        order: 1;
+        background-color: #292F33;
+        padding-left: 5px;
+      
+    }
+    
+    header {
+        
+        height: auto;
+        font-family: 'Orbitron';
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        text-align: right;
+        background: linear-gradient(#1781C2, #292F33, #1781C2);
+        display: flex;
+        z-index: 999;
+        width: auto;
+        font-size:18px;
+	    letter-spacing:0.1em;
+        -webkit-text-fill-color: lightgreen;
+        -webkit-text-stroke-color: rgb(2, 2, 2);
+        text-shadow: 2px 2px #000000;
+    }
+    
+    stickyNav {
+        background: linear-gradient(#1781C2, #292F33);
+        height: 6vh;
+        font-family: 'Helvetica Neue';
+        color: lightgreen;
+        text-align: center;
+        padding: 5px;
+        position: fixed;
+        width: 100%;
+        
+    }
+    
+    .employment {
+        font-family: 'Helvetica Neue';
+        color: #F3F6F8;
+        padding-left: 8px;
+        padding-bottom: 30px;
+        margin-top: 10px;
+        margin-right: 5px;
+        font-size: 18px;
+    }
+    /* Style the buttons that are used to open and close the accordion panel */
+    
+    .accordion {
+        background: linear-gradient(#1781C2, #292F33, #1781C2);
+        color:lightgreen ;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border-radius: 2em ;
+        outline: none;
+        transition: 4s;
+        margin-right: 5px;
+        font-size: 19px;
+    }
+    
+  
+    .panel {
+        padding: 0 18px;
+        background-color:#292F33 ;
+        display: none;
+        overflow: hidden;
+    }
+    
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    margin: 0;
-}
+    .accordion:after {
+        content: 'Click to Expand'' ''\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: lightgreen;
+        float: right;
+        margin-left: 5px;
+        color: white;
+        padding: 5px;
+      }
+      
+      .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+      }
 
-#main {
-    display: flex;
-    flex: 1;
-}
+      #twitter {
+        background: #292F33;
+        height: auto;
+          
+      }
 
-#main>article {
-    flex: 1;
-    order: 1;
-    background-color: black;
-    padding-top: 20px;
-    /* margin-top: 300px; */
-}
+      h1 {
+          margin-bottom: 8px;
+          margin-top: 5px;
+      }
 
-#main>nav,
-{
-    flex: 0 0 20vw;
-    padding-top: 242px;
-}
+      h2 {
+        margin-left: 2px;
+      }
 
-#main>nav {
-    background: linear-gradient(to right, darkblue, black, darkblue);
-    order: 3;
-}
+      .socialMedia {
+    float: right;
+    margin-top: 1px;
 
+      }
+      .socialMediaMain {
+          float: left;
+      }
 
-/* #main>aside {
-    background: beige;
-    order: 2;
-} */
+      .fa {
+        padding: 1px;
+        font-size: 30px;
+        width: 50px;
+        height: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        margin: 5px;
+      }
+      
+      .fa:hover {
+          color: lightgreen;
+      }
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
 
-header {
-    background: black;
-    height: auto;
-    font-family: 'Orbitron';
-    color: lightgreen;
-    padding-left: 50px;
-    padding-bottom: 20px;
-    text-align: left;
-    background: linear-gradient(darkblue, black, darkblue);
-    display: flex;
-    z-index: 999;
-    width: auto;
-}
+      .fa-github {
+        background: #55ACEE;
+        color: white;
+      }
 
-footer {
-    background: linear-gradient(darkblue, black);
-    height: 8vh;
-    font-family: 'Orbitron';
-    color: lightgreen;
-    text-align: center;
-    padding: 18px;
-}
+      .fa-linkedin {
+        background: #55ACEE;
+        color: white;
+      }
 
-footer,
-article,
-nav,
-{
-    padding: 1em;
-}
+      .fa-envelope {
+        background: #55ACEE;
+        color: white;
+      }
 
-.employment {
-    font-family: 'Orbitron';
-    color: lightgreen;
-    padding-left: 35px;
-    padding-bottom: 30px;
-    margin-top: 10px;
-}
-
-
-/* Style the buttons that are used to open and close the accordion panel */
-
-.accordion {
-    background: linear-gradient(darkblue, black, darkblue);
-    color: lightgreen;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 1s;
-}
-
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-
-.active,
-.accordion:hover {
-    background-color: green;
-}
-
-
-/* Style the accordion panel. Note: hidden by default */
-
-.panel {
-    padding: 0 18px;
-    background-color: black;
-    display: none;
-    overflow: hidden;
-}
-
-.twitter-timeline {
-    padding-top: 200px;
-}
+      .footer {
+        background: linear-gradient(#1781C2, #292F33);
+        height: 6vh;
+        font-family: 'Orbitron';
+        color: lightgreen;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+      }

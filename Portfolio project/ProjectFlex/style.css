@@ -1,0 +1,30 @@
+.headerContainerRight {
+    display: flex;
+    background: linear-gradient(black, blue);
+    border: 1px solid goldenrod;
+    height: 10vh;
+    width: 70vh;
+    flex-direction: row;
+}
+
+.headerContainerLeft {
+    display: flex;
+}
+
+.twitter {
+    display: flex;
+    background: red;
+    margin: auto;
+}
+
+.github {
+    display: flex;
+    background: yellow;
+    margin: auto;
+}
+
+.linkedin {
+    background: black;
+    display: flex;
+    margin: auto;
+}
