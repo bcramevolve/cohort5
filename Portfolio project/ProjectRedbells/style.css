@@ -27,7 +27,7 @@
         height: auto;
         font-family: 'Orbitron';
         color: white;
-        padding-left: 20px;
+        padding-left: 32px;
         padding-bottom: 15px;
         text-align: right;
         background: linear-gradient(#1781C2, #292F33, #1781C2);
@@ -173,9 +173,14 @@
       }
 
       .musicPlayer {
-        margin-left: 55%;
-        margin-top: 1.5%;
+        margin-left: 19%;
+        margin-top: 1.75%;
         margin-right: 20px;
         display: inline-flex;
       }
-   
+    
+      .centerImage {
+        margin-left: 25%;
+    
+
+      }
