@@ -61,6 +61,7 @@
         margin-top: 10px;
         margin-right: 5px;
         font-size: 18px;
+        width: 80%;
     }
     /* Style the buttons that are used to open and close the accordion panel */
     
@@ -69,7 +70,7 @@
         color:lightgreen ;
         cursor: pointer;
         padding: 18px;
-        width: 80%;
+        width: 90%;
         text-align: left;
         border-radius: 2em ;
         outline: none;
@@ -84,6 +85,7 @@
         background-color:#292F33 ;
         display: none;
         overflow: hidden;
+        width: 90%
     }
     
 
